@@ -1,4 +1,4 @@
-package zstd_0_5_x
+package zstd_0
 
 /*
 #include "zstd.h"
