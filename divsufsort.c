@@ -131,7 +131,7 @@ note:
           }
         }
         if(l == 0) { break; }
-        sssort(T, PAb, SA + k, SA + l,
+        sssort_0_5_x(T, PAb, SA + k, SA + l,
                curbuf, bufsize, 2, n, *(SA + k) == (m - 1));
       }
     }
@@ -141,7 +141,7 @@ note:
       for(c1 = ALPHABET_SIZE - 1; c0 < c1; j = i, --c1) {
         i = BUCKET_BSTAR(c0, c1);
         if(1 < (j - i)) {
-          sssort(T, PAb, SA + i, SA + j,
+          sssort_0_5_x(T, PAb, SA + i, SA + j,
                  buf, bufsize, 2, n, *(SA + i) == (m - 1));
         }
       }
