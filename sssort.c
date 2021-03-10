@@ -773,7 +773,7 @@ ss_swapmerge(const sauchar_t *T, const saidx_t *PA,
 
 /* Substring sort */
 void
-sssort(const sauchar_t *T, const saidx_t *PA,
+sssort_0_5_x(const sauchar_t *T, const saidx_t *PA,
        saidx_t *first, saidx_t *last,
        saidx_t *buf, saidx_t bufsize,
        saidx_t depth, saidx_t n, saint_t lastsuffix) {

@@ -131,7 +131,7 @@ note:
           }
         }
         if(l == 0) { break; }
-        sssort(T, PAb, SA + k, SA + l,
+        sssort_0_5_x(T, PAb, SA + k, SA + l,
                curbuf, bufsize, 2, n, *(SA + k) == (m - 1));
       }
     }
@@ -141,7 +141,7 @@ note:
       for(c1 = ALPHABET_SIZE - 1; c0 < c1; j = i, --c1) {
         i = BUCKET_BSTAR(c0, c1);
         if(1 < (j - i)) {
-          sssort(T, PAb, SA + i, SA + j,
+          sssort_0_5_x(T, PAb, SA + i, SA + j,
                  buf, bufsize, 2, n, *(SA + i) == (m - 1));
         }
       }
@@ -335,7 +335,7 @@ construct_BWT(const sauchar_t *T, saidx_t *SA,
 /*- Function -*/
 
 saint_t
-divsufsort(const sauchar_t *T, saidx_t *SA, saidx_t n) {
+divsufsort_0_5_x(const sauchar_t *T, saidx_t *SA, saidx_t n) {
   saidx_t *bucket_A, *bucket_B;
   saidx_t m;
   saint_t err = 0;
@@ -364,7 +364,7 @@ divsufsort(const sauchar_t *T, saidx_t *SA, saidx_t n) {
 }
 
 saidx_t
-divbwt(const sauchar_t *T, sauchar_t *U, saidx_t *A, saidx_t n) {
+divbwt_0_5_x(const sauchar_t *T, sauchar_t *U, saidx_t *A, saidx_t n) {
   saidx_t *B;
   saidx_t *bucket_A, *bucket_B;
   saidx_t m, pidx, i;
@@ -399,6 +399,6 @@ divbwt(const sauchar_t *T, sauchar_t *U, saidx_t *A, saidx_t n) {
 }
 
 const char *
-divsufsort_version(void) {
+divsufsort_version_0_5_x(void) {
   return PROJECT_VERSION_FULL;
 }
