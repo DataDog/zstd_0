@@ -1,7 +1,7 @@
 package zstd_0
 
 /*
-#include "zstd.h"
+#include "zstd_0.h"
 #include "zstd_buffered.h"
 */
 import "C"

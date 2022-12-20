@@ -44,7 +44,7 @@ extern "C" {
 /*-*************************************
 *  Dependencies
 ***************************************/
-#include "zstd.h"
+#include "zstd_0.h"
 #include "mem.h"
 
 
